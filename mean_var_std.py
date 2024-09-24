@@ -1,15 +1,12 @@
 import numpy as np
 
-
 def Calculate():
-    
+  
     Get_input = (input("PLEASE ENTER NINE DIGITS: "))
     
     if Get_input.isdigit() and len(Get_input) == 9:
         
         Creating_list = [int (i) for i in Get_input]
-
-        
        
         matrix = np.array(Creating_list).reshape(3, 3)
      
@@ -31,5 +28,4 @@ def Calculate():
         print ("PLEASE ENTER THE EXACT 9 DIGITS.")
         
    
-
 Calculate()
